@@ -75,14 +75,15 @@ function DeliveryForm() {
                     onChange={(event) => handleFormData(event)}
                     value={data.drone}
                 >
-                    {drones.map(({ id, marca, modelo }) => (
+                    {
+                    drones.length > 0 ? drones.map(({ id, marca, modelo }) => (
                     <option
                         key={`${id} - ${modelo}`}
                         value={id}
                     >
                         {`${marca} - ${modelo}`}
                     </option>
-                    )) }
+                    )) : ''}
                 </select>
             </label>
             <ButtonGreen>
