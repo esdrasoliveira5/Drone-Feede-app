@@ -67,7 +67,7 @@ function DeliveryRelatory() {
                         <td>{dateAndTime.toLocaleString()}</td>
                         <td>{deliveryStatus ? 'Entregue' : 'Em Transito' }</td>
                         <td>{deliveryDateAndTime ? deliveryDateAndTime.toLocaleString() : ''}</td>
-                        <td>{ !deliveryStatus? <a href={`${video.url}`} target="_blank">Video</a> : 'Video em andamento'}</td>
+                        <td>{ deliveryStatus? <a href={`${video.url}`} target="_blank">Video</a> : 'Video em andamento'}</td>
                         {/* <td>
                           {
                           !deliveryStatus?
