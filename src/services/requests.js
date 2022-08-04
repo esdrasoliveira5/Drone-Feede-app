@@ -1,4 +1,4 @@
-const URL_FETCH = 'http://localhost:8082';
+const URL_FETCH = 'https://dronefeederacc.herokuapp.com';
 const APLICATION = 'application/json';
 
 async function createDrone({ marca, modelo }) {
